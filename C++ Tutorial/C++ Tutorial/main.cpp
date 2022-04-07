@@ -115,7 +115,32 @@ int main() {
 //        {2.1, 2.2, 2.3}
 //    };
     
-    //12.
+    //12. Pointer
+    //points to an address
+//    int a = 10;
+//    int *p;
+//    p = &a;
+//    cout << p << endl;
+//    //dereference
+//    *p = 100;
+//    cout << a << endl;
+    //sizeof(p) = 4 under 32bit operating system (64:8)
+    
+    //13. Null pointer
+//    int *p = NULL;
+//    *p = 100; //wrong, cannot be accessed, because it is within 0-255, reserved for system
+    
+    //14. Wild pointer
+//    int *p = (int *)0x1100; //wrong, memo cannot access
+//    cout << *p << endl;
+    
+    //15. Const (+pointer, +variable, or +both)
+//    const int *p = &a; //the address can be changed, value in it cannot
+//    int * const p = &a; //the value in it can be changed, address cannot
+//    const int * const p = &a; //the value and address cannot be changed
+    
+    //16.
+    
     
     //system("pause");
     return 0;
